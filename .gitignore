@@ -1,0 +1,61 @@
+# Git ignore patterns for Real-Time ML Inference Pipeline
+
+# Build directories
+build/
+cmake-build-*/
+*.dir/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+
+# Executable files
+realtime_inference
+test_*
+*_benchmark
+
+# CUDA compilation files
+*.ptx
+*.cubin
+
+# Object files
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.sdf
+*.vcxproj.user
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Log files
+*.log
+
+# Test output
+Testing/
+
+# Data files (excluding sample data)
+data/*
+!data/.gitkeep
+
+# Performance results
+results/
+*.csv
+*.json
+
+# System files
+.DS_Store
+Thumbs.db
